@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -5,105 +6,194 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1, h3, h2 {
-  font-size: 2.5rem;
-  color: #fff;
-}
-
-h4 {
-  font-size: 1.2rem;
-  color: #fff;
   text-align: center;
-  margin-top: 10px;
+}
+
+h1, h2, h3, h4 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 p {
   font-size: 1.2rem;
   color: #d1d1d1;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   line-height: 1.5;
   opacity: 0.85;
 }
 
-.crash-intro {
-  padding: 40px;
+a {
+  text-decoration: none;
 }
 
-.crash-c {
+button {
+  background-color: #1a73e8;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 20px;
+  width: 60%;
+  max-width: 350px;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  background-color: #0069c0;
+}
+
+/* Container for both Proxies and Crash pages */
+.container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
-.contributor-msg {
-  background-color: #333;
-  padding: 15px;
-  margin: 20px 0;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.contributor-msg p {
-  font-size: 1.2rem;
-  color: #e0e0e0;
-  font-weight: bold;
-}
-
-.steps {
+.section {
   margin-bottom: 40px;
+}
+
+/* Steps Section (Proxies / Crash methods) */
+.steps {
+  margin-top: 40px;
 }
 
 .step {
   cursor: pointer;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #333;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.step-d {
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.step h3 {
+  font-size: 1.5rem;
+}
+
+.step p {
   display: none;
+  font-size: 1rem;
+  color: #bbb;
   margin-top: 10px;
 }
 
+.step-active p {
+  display: block;
+}
+
+/* Success Message */
 .success {
-  display: none;
-  background-color: #333;
+  background-color: #444;
   padding: 20px;
-  border-radius: 10px;
   margin-top: 40px;
+  border-radius: 10px;
+  color: #fff;
+  display: none;
 }
 
 .crash-images {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .image {
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .image img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.back-btn {
-  margin-top: 40px;
-  text-align: center;
+.image h4 {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
-button {
+.back-btn button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-button img {
+.back-btn button img {
   width: 40px;
 }
 
+/* Adjustments for Small Screens */
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .steps {
+    text-align: left;
+  }
+
   .crash-images {
     flex-direction: column;
+    align-items: center;
   }
+
+  .step {
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .image img {
+    max-width: 100%;
+  }
+
+  .image {
+    width: 80%;
+  }
+}
+
+/* Contributor Message */
+.contributor-msg {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.contributor-msg p {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
