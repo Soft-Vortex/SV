@@ -98,6 +98,10 @@ button:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin-left: 10px; /* Shifted right slightly */
+  margin-top: 15px; /* Added margin top to ensure spacing between buttons */
+  width: 60%; /* Keeping width consistent */
+  max-width: 350px;
 }
 
 #about-btn:hover {
