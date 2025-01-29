@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Soft Vortex</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,13 +18,25 @@
           <p>Soft Vortex is also an NBT kit, meaning that it is data that can be used in the popular game Minecraft.</p>
         </div>
       </div>
+
+      <button id="install" onclick="openModal()">How to Install</button>
     </div>
   </section>
 
+  <div id="install-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>How to Install Soft Vortex</h2>
+      <p>1. Download the Soft Vortex NBT by clicking the download button.</p>
+      <p>2. press win + r and type %appdata%.</p>
+      <p>3. locate .minecraft and double click</p>
+      <p>4. replace hotbar.nbt with the new downloaded version.</p>
+    </div>
+  </div>
+
   <section class="buttons">
-    <button id="discord" onclick="window.location.href='https://discord.gg/akwtAf8GA2'">Join our Discord</button>
-    
-    <button id="download" onclick="window.location.href='https://cdn.discordapp.com/attachments/1328126886735380581/1328770444806848572/hotbar.nbt?ex=679b0729&is=6799b5a9&hm=5f1e7ae63e0e1c5be4cae95618030d053079e3f8eb475b1b9479970149f8021d&'">Download NBT [7.1.0]</button>
+    <button id="discord" onclick="window.location.href='https://discord.gg/your-invite-code'">Join our Discord</button>
+    <button id="download" onclick="window.location.href='your-download-link-here'">Download</button>
   </section>
 
   <footer class="footer">
