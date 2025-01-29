@@ -1,3 +1,4 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Fullscreen Background with Smooth Scroll */
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -12,23 +14,22 @@ body {
   overflow-x: hidden;
   margin: 0;
   scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: linear-gradient(135deg, #2b2b2b, #333);
 }
 
+/* Main Hero Section Styling */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #2b2b2b, #333);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay for contrast */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
   padding: 20px;
-  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Hero Content Styling */
 .hero-content {
   max-width: 800px;
   width: 100%;
@@ -50,15 +51,16 @@ p {
   opacity: 0.85;
 }
 
+/* Section with Buttons */
 .buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack elements vertically */
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  width: 100%;
 }
 
+/* Button Styling */
 button {
   background-color: #1a73e8;
   color: white;
@@ -74,14 +76,21 @@ button {
   max-width: 350px;
 }
 
+/* Button Hover Effect */
 button:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
   background-color: #0069c0;
 }
 
+/* Dropdown Container Styling */
 .dropdown {
   position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button Styling */
+#about {
   background-color: #333;
   color: white;
   padding: 10px 20px;
@@ -92,12 +101,13 @@ button:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.dropdown:hover {
+#about:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   background-color: #444;
 }
 
+/* Dropdown Content Styling */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -111,20 +121,23 @@ button:hover {
   transform: translateY(20px);
 }
 
+/* Show Dropdown Content */
 .dropdown:hover .dropdown-content {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Paragraph Inside Dropdown */
 .dropdown-content p {
   font-size: 1rem;
   color: #e0e0e0;
   line-height: 1.5;
 }
 
+/* Modal for Installation Instructions */
 .install-box {
-  display: none;
+  display: none; /* Hidden by default */
   position: fixed;
   z-index: 1;
   padding-top: 100px;
@@ -132,53 +145,58 @@ button:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); /* Darkened background */
   overflow: auto;
   animation: fadeIn 0.5s ease;
 }
 
 .install-box-content {
   background-color: #333;
-  margin: auto;
+  margin: 5% auto;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
   max-width: 500px;
-  color: white;
+  color: #e0e0e0;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+ol {
+  margin-left: 20px;
+  font-size: 1.2rem;
 }
 
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+  color: #fff;
+  font-size: 1.5rem;
   font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
   cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
+.close:hover {
+  color: #ff0000;
 }
 
-footer {
+/* Footer Section Styling */
+.footer {
   background-color: #1c1c1c;
   padding: 20px 0;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
-footer .footer-content {
+/* Footer Text Styling */
+.footer-content {
   color: #fff;
   font-size: 1rem;
   opacity: 0.7;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
