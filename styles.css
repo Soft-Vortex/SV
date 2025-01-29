@@ -71,7 +71,7 @@ button {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  margin: 20px;
+  margin: 15px 0; /* Space between buttons */
   width: 60%;
   max-width: 350px;
 }
@@ -87,6 +87,7 @@ button:hover {
 .dropdown {
   position: relative;
   display: inline-block;
+  margin: 15px 0; /* Space between the About Us button and other buttons */
 }
 
 /* Dropdown Button Styling */
