@@ -76,28 +76,26 @@ h1 {
 }
 
 .crash-images {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-  flex-wrap: wrap;
+  margin-top: 30px;
+  text-align: center;
 }
 
-.image {
-  cursor: pointer;
-  margin-bottom: 20px;
+.crash-images .image {
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
 }
 
-.image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+.crash-images .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.image h4 {
-  margin-top: 10px;
+.crash-images .image p {
   color: #fff;
   font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 .contributor-msg {
