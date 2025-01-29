@@ -14,13 +14,12 @@ body {
   overflow-x: hidden;
   margin: 0;
   scroll-behavior: smooth;
-  background: url('https://cdn.pixabay.com/photo/2017/09/01/13/57/space-2707169_960_720.jpg') center/cover no-repeat fixed; /* Starry background */
 }
 
 /* Main Hero Section Styling */
 .hero {
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay for contrast */
+  background: linear-gradient(135deg, #2b2b2b, #333);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +70,7 @@ button {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  margin: 15px 0; /* Space between buttons */
+  margin: 20px;
   width: 60%;
   max-width: 350px;
 }
@@ -87,7 +86,6 @@ button:hover {
 .dropdown {
   position: relative;
   display: inline-block;
-  margin: 15px 0; /* Space between the About Us button and other buttons */
 }
 
 /* Dropdown Button Styling */
