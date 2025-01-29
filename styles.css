@@ -88,7 +88,7 @@ p {
 .features {
   display: flex;
   justify-content: space-between;
-  background-color: #222; 
+  background-color: #222;
   padding: 40px 20px;
   color: #fff;
   margin-bottom: 40px; 
@@ -98,7 +98,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 20px; 
-  align-items: center;
+  align-items: center; 
 }
 
 .feature {
