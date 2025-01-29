@@ -27,7 +27,7 @@ body {
   box-sizing: border-box;
 }
 
-.hero-con {
+.hero-content {
   max-width: 800px;
   width: 100%;
 }
@@ -64,20 +64,20 @@ p {
   color: #fff;
 }
 
-.developer-ico {
+.developer-icon {
   border-radius: 50%;
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
 }
 
-.d-inf h3 {
+.developer-info h3 {
   margin: 0;
   font-size: 1.2rem;
   color: #fff;
 }
 
-.d-inf p {
+.developer-info p {
   font-size: 1rem;
   color: #d1d1d1;
   text-align: center;
@@ -94,7 +94,7 @@ p {
   margin-bottom: 40px;
 }
 
-.feature-l, .feature-r {
+.feature-left, .feature-right {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -115,7 +115,7 @@ p {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-.feature-ico {
+.feature-icon {
   width: 60px;
   height: 60px;
   margin-bottom: 15px;
@@ -127,12 +127,13 @@ p {
   font-weight: bold;
 }
 
+
 @media (max-width: 768px) {
   .features {
     flex-direction: column;
     gap: 20px;
   }
-  .feature-l, .feature-r {
+  .feature-left, .feature-right {
     flex-direction: column; 
   }
 }
@@ -191,7 +192,7 @@ button:hover {
   background-color: #444;
 }
 
-.dropdown {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #333;
@@ -206,22 +207,66 @@ button:hover {
   transform: translateX(-50%) translateY(20px); 
 }
 
-.dropdown:hover .dropdown {
+.dropdown:hover .dropdown-content {
   display: block;
   opacity: 1;
   transform: translateX(-50%) translateY(0); 
 }
 
-.dropdown p {
+.dropdown-content p {
   font-size: 1rem;
   color: #e0e0e0;
   line-height: 1.5;
 }
 
+.install-box {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  overflow: auto;
+  animation: fadeIn 0.5s ease;
+}
 
+.install-box-content {
+  background-color: #333;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  color: #e0e0e0;
+}
 
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
 
+ol {
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
 
+.close {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff0000;
+}
 
 .footer {
   background-color: #1c1c1c;
@@ -231,13 +276,13 @@ button:hover {
   z-index: 1;
 }
 
-.f-content {
+.footer-content {
   color: #fff;
   font-size: 1rem;
   opacity: 0.7;
 }
 
-.steps {
+.download-text {
   color: #b0b0b0;
   font-size: 0.9rem;
   margin-top: 10px;
