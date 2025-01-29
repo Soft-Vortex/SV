@@ -5,40 +5,29 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Add this at the bottom of your CSS */
+
 .back-btn {
   text-align: center;
   margin-top: 30px;
 }
 
 .back-btn button {
-  background-color: #ff5722;
-  color: white;
-  font-size: 1.2rem;
-  padding: 15px 30px;
+  background: none;
   border: none;
-  border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-top: 20px;
-  width: 60%;
-  max-width: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
+  display: inline-flex;
 }
 
 .back-btn button img {
-  width: 25px; 
-  height: 25px;
-  margin-right: 10px; 
+  width: 40px;  
+  height: 40px;
 }
 
 .back-btn button:hover {
-  background-color: #e64a19;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);  
 }
+
 
 
 
