@@ -3,77 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soft Vortex</title>
+  <title>Introduction to SOCKS5 Proxies</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <section class="intro-s">
+    <div class="intro-c">
+      <h1>Introduction to SOCKS5 Proxies</h1>
+      <p class="intro-txt">
+        A SOCKS5 proxy is usually used to keep your privacy maintained when connecting to Minecraft servers. Here’s how to connect to a SOCKS5 proxy:
+      </p>
+      
+      <div class="steps">
+        <div class="step" onclick="toggleStep(1)">
+          <h3>1. Join the Soft Vortex Discord</h3>
+          <p id="step1" class="step-d">Go to the main page and click on the Discord button to join the Soft Vortex Discord server.</p>
+        </div>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Soft vortex Team</h1>
-      <p>We are a team that is destined to create the best NBT kit in Minecraft.</p>
-    </div>
-  </section>
+        <div class="step" onclick="toggleStep(2)">
+          <h3>2. Download the TXT file in the Proxies Channel</h3>
+          <p id="step2" class="step-d">Once you're in the Discord, head to the Proxies channel and download the txt file containing proxy information.</p>
+        </div>
 
+        <div class="step" onclick="toggleStep(3)">
+          <h3>3. Download the Meteor Pack (Optional)</h3>
+          <p id="step3" class="step-d">Download the Meteor client, or you can skip this step if you're already using Meteor client.</p>
+        </div>
 
-  <section class="developers">
-    <div class="developer">
-      <img src="https://cdn.discordapp.com/avatars/1259287760221507616/fe0870f3d5b0d9e7d9e5a3933e3557a2?size=1024" alt="Theodore612" class="developer-icon">
-      <div class="developer-info">
-        <h3>Theodore612</h3>
-        <p>Lead Developer and Founder.</p>
+        <div class="step" onclick="toggleStep(4)">
+          <h3>4. Open Minecraft with Meteor Client</h3>
+          <p id="step4" class="step-d">Launch Minecraft with the Meteor client installed and ready to use.</p>
+        </div>
+
+        <div class="step" onclick="toggleStep(5)">
+          <h3>5. Go to Multiplayer and Press "Proxies"</h3>
+          <p id="step5" class="step-d">In Minecraft, go to the Multiplayer menu, and click on the 'Proxies' button.</p>
+        </div>
+
+        <div class="step" onclick="toggleStep(6)">
+          <h3>6. Press Import and Select the TXT file</h3>
+          <p id="step6" class="step-d">Click on the 'Import' button and select the TXT file you downloaded from the Proxies channel.</p>
+        </div>
+
+        <div class="step" onclick="toggleStep(7)">
+          <h3>7. Connect to a Proxy</h3>
+          <p id="step7" class="step-d">Choose a proxy and connect. Your Minecraft connection is now secure!</p>
+        </div>
+      </div>
+
+      <div class="success" id="successMsg">
+        <h2>Congratulations! Your IP is now safe.</h2>
+      </div>
+
+      <!-- Back Button -->
+      <div class="back-btn">
+        <button onclick="window.location.href='https://soft-vortex.github.io/SV/'">
+          <img src="https://img.icons8.com/?size=100&id=37308&format=png&color=ffffff" alt="Back Icon">
+        </button>
       </div>
     </div>
-    <div class="developer">
-      <img src="https://cdn.discordapp.com/avatars/548520993535295548/077dc2a82c7bacf6a0abb4a97fa945a4?size=1024" alt="Piotrek5S" class="developer-icon">
-      <div class="developer-info">
-        <h3>Piotrek5S</h3>
-        <p>Developer and Co founder. </p>
-      </div>
-    </div>
   </section>
-
-<section class="features">
-  <div class="feature-left">
-    <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/bomb.png" alt="Bomb Icon" class="feature-icon">
-      <p>crash methods [1.21+]</p>
-    </div>
-    <button id="socks5" class="feature" onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/proxies'">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/wifi.png" alt="Wifi Icon" class="feature-icon">
-      <p>SOCKS5 proxy list</p>
-    </button>
-  </div>
-
-  <div class="feature-right">
-    <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/rocket.png" alt="Rocket Icon" class="feature-icon">
-      <p>Meteor modpack [1.21.1]</p>
-    </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/door.png" alt="Door Icon" class="feature-icon">
-      <p>Backdoors and force-ops</p>
-    </div>
-  </div>
-</section>
-
-
-  <section class="buttons">
-    <button id="discord" onclick="window.location.href='https://discord.gg/akwtAf8GA2'">Join our Discord</button>
-    <button id="about" class="dropdown">About Us
-      <div class="dropdown-content">
-        <p>Soft Vortex is also an NBT kit, meaning that it is data that can be used in the popular game Minecraft.</p>
-      </div>
-    </button>
-    <button id="download" onclick="download()">Download hotbar [7.1.0]</button>
-    <p class="steps">Join the Discord for installation steps</p>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Soft Vortex. All rights reserved.</p>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
