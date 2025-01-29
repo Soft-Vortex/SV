@@ -87,18 +87,18 @@ p {
 
 .features {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly; 
   background-color: #222;
   padding: 40px 20px;
   color: #fff;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 .feature-left, .feature-right {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
-  align-items: center; 
+  gap: 20px;
+  align-items: center;
 }
 
 .feature {
@@ -127,15 +127,13 @@ p {
   font-weight: bold;
 }
 
-
 @media (max-width: 768px) {
   .features {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 20px;
   }
   .feature-left, .feature-right {
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column; 
   }
 }
 
