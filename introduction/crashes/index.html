@@ -7,36 +7,35 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <section class="section">
+  <section class="intro-s">
+    <div class="intro-c">
       <h1>How to Use the Crash Modules Inside of the NBT Kit</h1>
-      <p>Here’s how you can use the crash modules in the NBT kit to crash servers:</p>
-
-      <div class="contributor-msg">
-        <p>Become a contributor to gain access to beta releases with more modules!</p>
-      </div>
-
-      <!-- Steps -->
+      <p class="intro-txt">
+        Here’s how you can use the crash modules in the NBT kit to crash servers:
+      </p>
+      
       <div class="steps">
         <div class="step" onclick="toggleStep(1)">
           <h3>1. Join the Soft Vortex Discord</h3>
-          <p id="step1">Go to the main page and click on the Discord button to join the Soft Vortex Discord server.</p>
+          <p id="step1" class="step-d">Go to the main page and click on the Discord button to join the Soft Vortex Discord server.</p>
         </div>
+
         <div class="step" onclick="toggleStep(2)">
           <h3>2. Download hotbar.nbt (or via main web)</h3>
-          <p id="step2">Download the `hotbar.nbt` file either from the website or directly via the Discord server.</p>
+          <p id="step2" class="step-d">Download the `hotbar.nbt` file either from the website or directly via the Discord server.</p>
         </div>
+
         <div class="step" onclick="toggleStep(3)">
           <h3>3. Take the Crash Item You Want</h3>
-          <p id="step3">Choose the crash module you want to use, from the crash items available.</p>
+          <p id="step3" class="step-d">Choose the crash module you want to use, from the crash items available.</p>
         </div>
+
         <div class="step" onclick="toggleStep(4)">
           <h3>4. Place Down / Follow Instructions Inside of the NBT</h3>
-          <p id="step4">Follow the instructions inside the NBT file to place the crash item in the game world and execute the crash.</p>
+          <p id="step4" class="step-d">Follow the instructions inside the NBT file to place the crash item in the game world and execute the crash.</p>
         </div>
       </div>
 
-      <!-- Success Message -->
       <div class="success" id="successMsg">
         <h2>Congratulations! You Crashed Your First Server.</h2>
       </div>
@@ -57,25 +56,20 @@
         </div>
       </div>
 
+      <!-- Contributor Message -->
+      <div class="contributor-msg">
+        <p>Become a contributor to gain access to beta releases with more modules!</p>
+      </div>
+
       <!-- Back Button -->
       <div class="back-btn">
         <button onclick="window.location.href='https://soft-vortex.github.io/SV/'">
-          <img src="https://img.icons8.com/?size=100&id=37308&format=png&color=ffffff" alt="Back">
+          <img src="https://img.icons8.com/?size=100&id=37308&format=png&color=ffffff" alt="Back Icon">
         </button>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <script>
-    function toggleStep(step) {
-      const stepElement = document.getElementById('step' + step);
-      const successElement = document.getElementById('successMsg');
-      stepElement.style.display = stepElement.style.display === 'block' ? 'none' : 'block';
-      successElement.style.display = 'none';
-      if (step === 4) {
-        successElement.style.display = 'block';
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
