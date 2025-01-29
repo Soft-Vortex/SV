@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dark Theme Background */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+/* Main Container Styling */
+.container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #2b2b2b, #333);
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title Styling */
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Button Styling */
+button {
+  background-color: #1a73e8;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 15px;
+  width: 60%;
+  max-width: 300px;
+}
+
+/* Button Hover Effect */
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  background-color: #0069c0;
+}
+
+/* Dropdown Container Styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button Styling */
+#about-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#about-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  background-color: #444;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  transform: translateY(20px);
+}
+
+/* Show Dropdown Content */
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Paragraph Inside Dropdown */
+.dropdown-content p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+/* Animation for Fade-in Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
