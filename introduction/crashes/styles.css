@@ -78,16 +78,20 @@ h1 {
 .crash-images {
   margin-top: 30px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .crash-images .image {
   display: inline-block;
-  margin: 15px;
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .crash-images .image img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
 }
@@ -96,6 +100,10 @@ h1 {
   color: #fff;
   font-size: 1.2rem;
   margin-top: 10px;
+}
+
+.crash-images .image:hover {
+  transform: scale(1.1);
 }
 
 .contributor-msg {
