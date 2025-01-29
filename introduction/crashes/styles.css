@@ -1,8 +1,40 @@
-/* Styling for crash section */
-.crash-s {
+body {
   background-color: #121212;
-  padding: 40px 20px;
   color: #e0e0e0;
+  font-size: 16px;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h3, h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #d1d1d1;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.crash-intro {
+  padding: 40px;
+}
+
+.crash-c {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contributor-msg {
@@ -17,21 +49,6 @@
   font-size: 1.2rem;
   color: #e0e0e0;
   font-weight: bold;
-  margin: 0;
-  letter-spacing: 1px;
-}
-
-
-
-.crash-c {
-  text-align: center;
-}
-
-.crash-txt {
-  font-size: 1.2rem;
-  color: #d1d1d1;
-  margin-bottom: 40px;
-  line-height: 1.5;
 }
 
 .steps {
@@ -39,72 +56,54 @@
 }
 
 .step {
-  margin-bottom: 20px;
-}
-
-.step h3 {
-  font-size: 1.5rem;
-  color: #fff;
+  cursor: pointer;
 }
 
 .step-d {
-  font-size: 1.1rem;
-  color: #d1d1d1;
-  line-height: 1.5;
+  display: none;
+  margin-top: 10px;
 }
 
 .success {
+  display: none;
   background-color: #333;
   padding: 20px;
   border-radius: 10px;
-  margin-top: 20px;
-}
-
-.success h2 {
-  color: #fff;
+  margin-top: 40px;
 }
 
 .crash-images {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-around;
   margin-top: 40px;
 }
 
 .image {
-  text-align: center;
-  max-width: 300px;
+  cursor: pointer;
 }
 
 .image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.image:hover img {
-  transform: scale(1.05);
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 .back-btn {
+  margin-top: 40px;
   text-align: center;
-  margin-top: 30px;
 }
 
-.back-btn button {
-  background: none;
+button {
+  background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 0;
 }
 
-.back-btn button img {
+button img {
   width: 40px;
-  height: 40px;
 }
 
-.back-btn button:hover {
-  transform: scale(1.1);
+@media (max-width: 768px) {
+  .crash-images {
+    flex-direction: column;
+  }
 }
