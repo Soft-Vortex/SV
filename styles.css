@@ -24,9 +24,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 20px;
   box-sizing: border-box;
-  position: relative;
 }
 
 /* Hero Content Styling */
@@ -51,7 +50,16 @@ p {
   opacity: 0.85;
 }
 
-/* Buttons Styling */
+/* Section with Buttons */
+.buttons-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* Button Styling */
 button {
   background-color: #1a73e8;
   color: white;
@@ -62,7 +70,7 @@ button {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  margin: 15px;
+  margin: 20px;
   width: 60%;
   max-width: 350px;
 }
@@ -140,16 +148,4 @@ button:hover {
   color: #fff;
   font-size: 1rem;
   opacity: 0.7;
-}
-
-/* Smooth Fade-In Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
