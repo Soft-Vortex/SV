@@ -116,6 +116,39 @@ button:hover {
   line-height: 1.5;
 }
 
+/* Download Button Styling */
+#download-btn {
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 15px;
+  width: 60%;
+  max-width: 300px;
+}
+
+/* Download Button Hover Effect */
+#download-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  background-color: #218838;
+}
+
+/* DMCA Badge Styling */
+.dmca-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.dmca-badge img {
+  width: 200px;
+}
+
 /* Animation for Fade-in Effect */
 @keyframes fadeIn {
   from {
