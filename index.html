@@ -11,33 +11,31 @@
     <div class="hero-content">
       <h1>Welcome to the Soft Vortex Website</h1>
       <p>We are a team that is destined to create the best NBT kit in Minecraft.</p>
-      
-      <div class="dropdown">
-        <button id="about">About Us</button>
-        <div id="about-text" class="dropdown-content">
-          <p>Soft Vortex is also an NBT kit, meaning that it is data that can be used in the popular game Minecraft.</p>
-        </div>
-      </div>
-
-      <button id="install" onclick="openModal()">How to Install</button>
     </div>
   </section>
-
-  <div id="install-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2>How to Install Soft Vortex</h2>
-      <p>1. Download the Soft Vortex NBT by clicking the download button.</p>
-      <p>2. press win + r and type %appdata%.</p>
-      <p>3. locate .minecraft and double click</p>
-      <p>4. replace hotbar.nbt with the new downloaded version.</p>
-    </div>
-  </div>
 
   <section class="buttons">
     <button id="discord" onclick="window.location.href='https://discord.gg/your-invite-code'">Join our Discord</button>
-    <button id="download" onclick="window.location.href='your-download-link-here'">Download</button>
+    <button id="about" class="dropdown">About Us
+      <div class="dropdown-content">
+        <p>Soft Vortex is also an NBT kit, meaning that it is data that can be used in the popular game Minecraft.</p>
+      </div>
+    </button>
+    <button id="download" onclick="showInstallBox()">Download [7.1.0]</button>
   </section>
+
+  <div id="install-box" class="install-box">
+    <div class="install-box-content">
+      <span class="close" onclick="closeInstallBox()">&times;</span>
+      <h2>How to Install Soft Vortex</h2>
+      <ol>
+        <li>Download the Soft Vortex NBT by clicking the download button.</li>
+        <li>Press Win + R and type <code>%appdata%</code>.</li>
+        <li>Locate the <code>.minecraft</code> folder and double-click it.</li>
+        <li>Replace the <code>hotbar.nbt</code> file with the new downloaded version.</li>
+      </ol>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="footer-content">
