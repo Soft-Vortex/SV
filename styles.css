@@ -12,6 +12,9 @@ body {
   overflow-x: hidden;
   margin: 0;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero {
@@ -23,7 +26,7 @@ body {
   text-align: center;
   flex-direction: column;
   padding: 20px;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 .hero-content {
@@ -47,28 +50,17 @@ p {
   opacity: 0.85;
 }
 
-#about {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-top: 20px;
-  width: 60%;
-  max-width: 350px;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  width: 100%;
 }
 
-#about:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-  background-color: #444;
-}
-
-#install {
-  background-color: #ff9800;
+button {
+  background-color: #1a73e8;
   color: white;
   font-size: 1.2rem;
   padding: 15px 30px;
@@ -77,18 +69,61 @@ p {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  margin-top: 20px;
+  margin: 20px;
   width: 60%;
   max-width: 350px;
 }
 
-#install:hover {
+button:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-  background-color: #e68900;
+  background-color: #0069c0;
 }
 
-.modal {
+.dropdown {
+  position: relative;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  background-color: #444;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  transform: translateY(20px);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-content p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+.install-box {
   display: none;
   position: fixed;
   z-index: 1;
@@ -97,12 +132,12 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
-  transition: opacity 0.5s ease;
+  overflow: auto;
+  animation: fadeIn 0.5s ease;
 }
 
-.modal-content {
+.install-box-content {
   background-color: #333;
   margin: auto;
   padding: 20px;
@@ -110,7 +145,6 @@ p {
   width: 80%;
   max-width: 500px;
   color: white;
-  animation: fadeIn 0.3s ease-in-out;
 }
 
 .close {
@@ -128,15 +162,13 @@ p {
   cursor: pointer;
 }
 
-.footer {
+footer {
   background-color: #1c1c1c;
   padding: 20px 0;
   text-align: center;
-  position: relative;
-  z-index: 1;
 }
 
-.footer-content {
+footer .footer-content {
   color: #fff;
   font-size: 1rem;
   opacity: 0.7;
