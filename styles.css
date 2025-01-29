@@ -145,12 +145,14 @@ button:hover {
   opacity: 0;
   transition: opacity 0.5s ease;
   transform: translateY(20px);
+  left: 50%;  
+  transform: translateX(-50%) translateY(20px); 
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0); 
 }
 
 .dropdown-content p {
