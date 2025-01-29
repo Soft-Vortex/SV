@@ -6,7 +6,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fullscreen Background with Smooth Scroll and Animated Stars */
+/* Fullscreen Background with Smooth Scroll */
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -14,37 +14,13 @@ body {
   overflow-x: hidden;
   margin: 0;
   scroll-behavior: smooth;
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* Animated Starry Background */
-@keyframes starry-background {
-  0% { background-position: 0 0; }
-  100% { background-position: 10000px 10000px; }
-}
-
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 50%);
-  box-shadow: 
-    0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff, 
-    0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff, 0 0 8px #fff,
-    0 0 9px #fff, 0 0 10px #fff, 0 0 11px #fff, 0 0 12px #fff;
-  animation: starry-background 100s linear infinite;
-  z-index: -1; /* Behind all other content */
+  background: url('https://cdn.pixabay.com/photo/2017/09/01/13/57/space-2707169_960_720.jpg') center/cover no-repeat fixed; /* Starry background */
 }
 
 /* Main Hero Section Styling */
 .hero {
   height: 100vh;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay for contrast */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay for contrast */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,12 +54,10 @@ p {
 /* Section with Buttons */
 .buttons-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack elements vertically */
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  position: relative;
-  z-index: 1;
 }
 
 /* Button Styling */
@@ -97,10 +71,9 @@ button {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  margin: 15px;
+  margin: 20px;
   width: 60%;
   max-width: 350px;
-  z-index: 2;
 }
 
 /* Button Hover Effect */
@@ -114,7 +87,6 @@ button:hover {
 .dropdown {
   position: relative;
   display: inline-block;
-  margin: 15px;
 }
 
 /* Dropdown Button Styling */
