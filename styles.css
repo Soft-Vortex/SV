@@ -93,9 +93,18 @@ p {
   margin-bottom: 40px;
 }
 
-.feature-left
-.feature-right
-
+.feature-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.feature-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 
 .feature {
   background-color: #333;
