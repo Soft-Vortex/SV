@@ -92,12 +92,7 @@ p {
   color: #fff;
   margin-bottom: 40px;
 }
-.feature-left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
+.feature-left,
 .feature-right {
   display: flex;
   flex-direction: column;
@@ -138,6 +133,7 @@ p {
   color: #e0e0e0;
   font-weight: bold;
 }
+
 
 
 @media (max-width: 768px) {
