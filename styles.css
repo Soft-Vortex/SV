@@ -93,18 +93,9 @@ p {
   margin-bottom: 40px;
 }
 
-.feature-left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-.feature-right {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
+.feature-left
+.feature-right
+
 
 .feature {
   background-color: #333;
