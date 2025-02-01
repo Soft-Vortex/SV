@@ -8,14 +8,21 @@
 
 
 
-body {
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url('https://media.discordapp.net/attachments/1259292697869553746/1335059828334137435/latest.png?ex=679ecadb&is=679d795b&hm=a98667726ec5d3867e1aa4b55badf36eb2098aded939641b33d5f7618b4f52a5&=&format=webp&quality=lossless&width=330&height=330');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
   opacity: 0.1;
   z-index: -1;
+}
+
   background-color: #121212;
   color: #e0e0e0;
   font-size: 16px;
