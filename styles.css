@@ -17,8 +17,9 @@ body {
 
 .hero {
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -53,13 +54,13 @@ p {
   align-items: center;
   margin: 40px 0;
   text-align: center;
+  gap: 40px;
 }
 
 .developer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
   color: #fff;
 }
 
@@ -85,14 +86,17 @@ p {
 
 .features {
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   background-color: #222;
   padding: 40px 20px;
   color: #fff;
   margin-bottom: 40px;
 }
 
-.feature-left, .feature-right {
+.feature-left {
+  gap: 20px;
+}
+.feature-right {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -106,6 +110,14 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   text-align: center;
+  width: 180px; /* Matching size */
+  height: 220px; /* Matching height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
 }
 
 .feature:hover {
@@ -114,9 +126,9 @@ p {
 }
 
 .feature-icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 15px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
 }
 
 .feature p {
@@ -130,14 +142,15 @@ p {
     flex-direction: column;
     gap: 20px;
   }
-  .feature-left, .feature-right {
-    flex-direction: column; 
+  .feature-left,
+  .feature-right {
+    flex-direction: column;
   }
 }
 
 .buttons {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
@@ -178,6 +191,7 @@ button:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin-top: 20px; /* Moves below text */
 }
 
 #about:hover {
@@ -197,69 +211,20 @@ button:hover {
   opacity: 0;
   transition: opacity 0.5s ease;
   transform: translateY(20px);
-  left: 50%;  
-  transform: translateX(-50%) translateY(20px); 
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
   opacity: 1;
-  transform: translateX(-50%) translateY(0); 
+  transform: translateX(-50%) translateY(0);
 }
 
 .dropdown-content p {
   font-size: 1rem;
   color: #e0e0e0;
   line-height: 1.5;
-}
-
-.install-box {
-  display: none; 
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); 
-  overflow: auto;
-  animation: fadeIn 0.5s ease;
-}
-
-.install-box-content {
-  background-color: #333;
-  margin: 5% auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 500px;
-  color: #e0e0e0;
-}
-
-h2 {
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-ol {
-  margin-left: 20px;
-  font-size: 1.2rem;
-}
-
-.close {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: #ff0000;
 }
 
 .footer {
