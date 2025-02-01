@@ -138,6 +138,38 @@ p {
   }
 }
 
+.feature-right button {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  cursor: pointer;
+}
+
+.feature-right button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.feature-right button img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-right button p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+
+
 .buttons {
   display: flex;
   flex-direction: column; 
