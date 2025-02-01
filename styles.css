@@ -92,6 +92,7 @@ p {
   color: #fff;
   margin-bottom: 40px;
 }
+
 .feature-left,
 .feature-right {
   display: flex;
@@ -133,8 +134,6 @@ p {
   color: #e0e0e0;
   font-weight: bold;
 }
-
-
 
 @media (max-width: 768px) {
   .features {
