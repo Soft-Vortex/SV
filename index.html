@@ -1,86 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soft Vortex</title>
+  <title>Soft Vortex - The project</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Soft Vortex Team</h1>
-    <p>We are a team that is destined to create the best NBT kit in Minecraft.</p>
-    <button id="about" class="dropdown">About Us
-      <div class="dropdown-content">
-        <p>Soft Vortex is also an NBT kit, meaning that it is data that can be used in the popular game Minecraft.</p>
+  <div class="container-main">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <h1 class="logo">SOFT VORTEX</h1>
+        <nav class="nav">
+          <a href="#team" class="nav-link">Team</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="https://discord.gg/akwtAf8GA2" class="nav-link-cta">Discord</a>
+        </nav>
       </div>
-    </button>
-  </div>
-</section>
+    </header>
 
-<section class="developers">
-  <div class="developer">
-    <img src="https://cdn.discordapp.com/avatars/1259287760221507616/fe0870f3d5b0d9e7d9e5a3933e3557a2?size=1024" alt="Theodore612" class="developer-icon">
-    <div class="developer-info">
-      <h3>Theodore612</h3>
-      <p>Lead Developer and Founder.</p>
-    </div>
-  </div>
-
-  <div class="developer">
-    <img src="https://cdn.discordapp.com/avatars/384798875493597194/8a18f3cb919a62db5a385fb624b20888?size=1024" alt="Keyshujin" class="developer-icon">
-    <div class="developer-info">
-      <h3>Keyshujin</h3>
-      <p>Theodore612's Mentor</p>
-    </div>
-  </div>
-
-  <div class="developer">
-    <img src="https://cdn.discordapp.com/avatars/548520993535295548/077dc2a82c7bacf6a0abb4a97fa945a4?size=1024" alt="Piotrek5S" class="developer-icon">
-    <div class="developer-info">
-      <h3>Piotrek5S</h3>
-      <p>Developer and Co-founder.</p>
-    </div>
-  </div>
-</section>
-
-
-  <section class="features">
-    <div class="feature-left">
-      <button id="crashMethods" class="feature" onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/crashes/'">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/bomb.png" alt="bomb" class="feature-icon">
-        <p>Crash Methods</p>
-      </button>
-      <button id="socks5" class="feature" onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/proxies'">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/wifi.png" alt="wifi" class="feature-icon">
-        <p>SOCKS5 proxy list</p>
-      </button>
-    </div>
-
-    <div class="feature-right">
-      <div class="feature">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/rocket.png" alt="rocket" class="feature-icon">
-        <p>Meteor modpack [1.21.1]</p>
+    <!-- Hero -->
+    <section class="hero-new">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="hero-label">:3</span>
+          <h2 class="hero-title">The best NBT community</h2>
+          <p class="hero-desc">A great Community to share and learn more about NBT</p>
+          <div class="hero-actions">
+            <button class="btn-download" onclick="download()">
+              <span>Download v7.2.0</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 15L12 3M12 15L8 11M12 15L16 11M3 17L3 18C3 19.1046 3.89543 20 5 20L19 20C20.1046 20 21 19.1046 21 18V17"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <a href="https://discord.gg/akwtAf8GA2" class="btn-secondary">View Documentation</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">7.2.0</div>
+              <div class="stat-label">Latest release</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">1.21.5+</div>
+              <div class="stat-label">made with love ❤️</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="feature">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/door.png" alt="door" class="feature-icon">
-        <p>Backdoors and force-ops [soon]</p>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="team-new">
+      <div class="section-header">
+        <h3 class="section-title-new">Meet The Team</h3>
+        <p class="section-desc">The people behind Soft Vortex</p>
       </div>
-    </div>
-  </section>
+
+      <div class="team-grid-new">
+        <div class="team-member-large">
+          <img src="theodore612.jpg" alt="Theodore612" class="team-avatar-large">
+          <div class="team-info-large">
+            <h4 class="team-name-large">Theodore612</h4>
+            <p class="team-role-large">Lead Developer & Founder</p>
+            <p class="team-bio-large">The mastermind behind the project</p>
+            <div class="team-stats">
+              <div class="team-stat">
+                <span class="stat-value">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="team-stat">
+                <span class="stat-value">Worked on</span>
+                <span class="stat-label">Crashes, backdoors, the discord server and the minecraft kit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member-large">
+          <img src="https://cdn.discordapp.com/avatars/548520993535295548/077dc2a82c7bacf6a0abb4a97fa945a4?size=1024"
+            alt="Piotrek5S" class="team-avatar-large">
+          <div class="team-info-large">
+            <h4 class="team-name-large">Piotrek5S</h4>
+            <p class="team-role-large">Developer & Co-founder</p>
+            <p class="team-bio-large">The person who is behind 50% of the ideas</p>
+            <div class="team-stats">
+              <div class="team-stat">
+                <span class="stat-value">2.5+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="team-stat">
+                <span class="stat-value">Worked on</span>
+                <span class="stat-label">The discord server, minecraft kit and features</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features-new">
+      <div class="section-header">
+        <h3 class="section-title-new">Capabilities</h3>
+        <p class="section-desc">What Soft Vortex offers</p>
+      </div>
+
+      <div class="features-list">
+        <div class="feature-item"
+          onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/crashes/'">
+          <div class="feature-header">
+            <div class="feature-icon-new">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/bomb.png" alt="crash">
+            </div>
+            <div>
+              <h4 class="feature-title-new">Crashes</h4>
+              <p class="feature-subtitle">up to date crash methods</p>
+            </div>
+          </div>
+          <p class="feature-description">Crashes that involve physics and absolutely annoying people</p>
+          <span class="feature-link">Explore →</span>
+        </div>
+
+        <div class="feature-item"
+          onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/proxies'">
+          <div class="feature-header">
+            <div class="feature-icon-new">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/wifi.png" alt="proxy">
+            </div>
+            <div>
+              <h4 class="feature-title-new">SOCKS5 Proxies</h4>
+              <p class="feature-subtitle">proxy network</p>
+            </div>
+          </div>
+          <p class="feature-description">A file of proxies for Meteor client</p>
+          <span class="feature-link">Explore →</span>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-icon-new">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/rocket.png" alt="modpack">
+            </div>
+            <div>
+              <h4 class="feature-title-new">Meteor Modpack</h4>
+              <p class="feature-subtitle">Optimized for v1.21.1</p>
+            </div>
+          </div>
+          <p class="feature-description">Custom-configured Meteor client modpack with performance optimizations and
+            essential utilities.</p>
+          <span class="feature-status">Active</span>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-header">
+            <div class="feature-icon-new">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/door.png" alt="backdoor">
+            </div>
+            <div>
+              <h4 class="feature-title-new">Backdoors & Force-Ops</h4>
+              <p class="feature-subtitle">Server backdooring</p>
+            </div>
+          </div>
+          <p class="feature-description">Backdoors for people who like to play the long game</p>
+          <span class="feature-status upcoming">In Development</span>
+        </div>
+      </div>
+    </section>
 
 
-  <section class="buttons">
-    <button id="discord" onclick="window.location.href='https://discord.gg/akwtAf8GA2'">Join our Discord</button>
-    <button id="download" onclick="download()">Download hotbar [7.1.0]</button>
-    <p class="steps">Join the Discord for installation steps</p>
-  </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Soft Vortex. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer-new">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h5 class="footer-logo">SOFT VORTEX</h5>
+          <p class="footer-tagline">(the project)</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://discord.gg/akwtAf8GA2" class="footer-link">Discord Community</a>
+          <a href="#" onclick="download(); return false;" class="footer-link">Download</a>
+          <a href="#features" class="footer-link">Features</a>
+        </div>
+        <div class="footer-info">
+          <p class="footer-text">© 2025 Soft Vortex</p>
+          <p class="footer-text">All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
+
+</html>
