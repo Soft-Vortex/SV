@@ -21,7 +21,7 @@ function createASCIIVortex() {
                 if (distance < maxRadius && distance > 1) {
                     // Create inward spiral motion
                     const spiral = angle + (distance * 0.15) - offset;
-                    const armCount = 10; // Number of spiral arms
+                    const armCount = 3; // Number of spiral arms
                     const spiralArm = Math.sin(spiral * armCount) * Math.cos(distance * 0.15);
 
                     // Density increases toward center for inward pull effect
