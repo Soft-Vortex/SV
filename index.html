@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soft Vortex - The project</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
   <div class="container-main">
     <!-- Header -->
     <header class="header">
       <div class="header-content">
-        <h1 class="logo">SOFT VORTEX</h1>
+        <div class="logo-container">
+          <img src="logo.png" alt="Soft Vortex" class="logo-img">
+          <h1 class="logo">SOFT VORTEX</h1>
+        </div>
         <nav class="nav">
           <a href="#team" class="nav-link">Team</a>
           <a href="#features" class="nav-link">Features</a>
@@ -25,9 +25,8 @@
         </nav>
       </div>
     </header>
-
     <!-- Hero -->
-    <section class="hero-new">
+    <section class="hero-new animate-on-load">
       <div class="hero-grid">
         <div class="hero-text">
           <span class="hero-label">:3</span>
@@ -59,14 +58,12 @@
         </div>
       </div>
     </section>
-
     <!-- Team -->
-    <section id="team" class="team-new">
+    <section id="team" class="team-new fade-in-section">
       <div class="section-header">
         <h3 class="section-title-new">Meet The Team</h3>
         <p class="section-desc">The people behind Soft Vortex</p>
       </div>
-
       <div class="team-grid-new">
         <div class="team-member-large">
           <img src="theodore612.jpg" alt="Theodore612" class="team-avatar-large">
@@ -86,7 +83,6 @@
             </div>
           </div>
         </div>
-
         <div class="team-member-large">
           <img src="https://cdn.discordapp.com/avatars/548520993535295548/077dc2a82c7bacf6a0abb4a97fa945a4?size=1024"
             alt="Piotrek5S" class="team-avatar-large">
@@ -108,14 +104,12 @@
         </div>
       </div>
     </section>
-
     <!-- Features -->
-    <section id="features" class="features-new">
+    <section id="features" class="features-new fade-in-section">
       <div class="section-header">
         <h3 class="section-title-new">Capabilities</h3>
         <p class="section-desc">What Soft Vortex offers</p>
       </div>
-
       <div class="features-list">
         <div class="feature-item"
           onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/crashes/'">
@@ -131,7 +125,6 @@
           <p class="feature-description">Crashes that involve physics and absolutely annoying people</p>
           <span class="feature-link">Explore →</span>
         </div>
-
         <div class="feature-item"
           onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/proxies'">
           <div class="feature-header">
@@ -146,7 +139,6 @@
           <p class="feature-description">A file of proxies for Meteor client</p>
           <span class="feature-link">Explore →</span>
         </div>
-
         <div class="feature-item">
           <div class="feature-header">
             <div class="feature-icon-new">
@@ -161,7 +153,6 @@
             essential utilities.</p>
           <span class="feature-status">Active</span>
         </div>
-
         <div class="feature-item">
           <div class="feature-header">
             <div class="feature-icon-new">
@@ -177,9 +168,6 @@
         </div>
       </div>
     </section>
-
-
-
     <!-- Footer -->
     <footer class="footer-new">
       <div class="footer-grid">
@@ -199,8 +187,6 @@
       </div>
     </footer>
   </div>
-
   <script src="script.js"></script>
 </body>
-
 </html>
