@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             item.style.transform = 'translateY(0)';
         }, 100 * index);
     });
-    // Add stagger animation to team members
+    // Add stagger animation to team membersA
     const teamMembers = document.querySelectorAll('.team-member-large');
     teamMembers.forEach((member, index) => {
         member.style.opacity = '0';
