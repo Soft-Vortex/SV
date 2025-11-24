@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+  <div id="ascii-vortex"></div>
+
   <div class="container-main">
     <!-- Header -->
     <header class="header">
@@ -20,50 +25,52 @@
         </div>
         <nav class="nav">
           <a href="#team" class="nav-link">Team</a>
-          <a href="#features" class="nav-link">Features</a>
+          <a href="#projects" class="nav-link">Projects</a>
           <a href="https://discord.gg/akwtAf8GA2" class="nav-link-cta">Discord</a>
         </nav>
       </div>
     </header>
+
     <!-- Hero -->
     <section class="hero-new animate-on-load">
       <div class="hero-grid">
         <div class="hero-text">
           <span class="hero-label">:3</span>
-          <h2 class="hero-title">The best NBT community</h2>
-          <p class="hero-desc">A great Community to share and learn more about NBT</p>
+          <h2 class="hero-title">Making life easier for people</h2>
+          <p class="hero-desc">A duo trying to make life easier for certain people</p>
           <div class="hero-actions">
-            <button class="btn-download" onclick="download()">
-              <span>Download v7.2.0</span>
+            <a href="#projects" class="btn-download">
+              <span>View Projects</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12 15L12 3M12 15L8 11M12 15L16 11M3 17L3 18C3 19.1046 3.89543 20 5 20L19 20C20.1046 20 21 19.1046 21 18V17"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
-            </button>
+            </a>
             <a href="https://discord.gg/akwtAf8GA2" class="btn-secondary">View Documentation</a>
           </div>
         </div>
         <div class="hero-visual">
           <div class="stats-grid">
             <div class="stat-card">
-              <div class="stat-number">7.2.0</div>
-              <div class="stat-label">Latest release</div>
+              <div class="stat-number">2</div>
+              <div class="stat-label">Active Projects</div>
             </div>
             <div class="stat-card">
-              <div class="stat-number">1.21.5+</div>
-              <div class="stat-label">made with love ❤️</div>
+              <div class="stat-number">2</div>
+              <div class="stat-label">Developers</div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Team -->
     <section id="team" class="team-new fade-in-section">
       <div class="section-header">
         <h3 class="section-title-new">Meet The Team</h3>
         <p class="section-desc">The people behind Soft Vortex</p>
       </div>
+
       <div class="team-grid-new">
         <div class="team-member-large">
           <img src="theodore612.jpg" alt="Theodore612" class="team-avatar-large">
@@ -83,6 +90,7 @@
             </div>
           </div>
         </div>
+
         <div class="team-member-large">
           <img src="https://cdn.discordapp.com/avatars/548520993535295548/077dc2a82c7bacf6a0abb4a97fa945a4?size=1024"
             alt="Piotrek5S" class="team-avatar-large">
@@ -104,70 +112,59 @@
         </div>
       </div>
     </section>
-    <!-- Features -->
-    <section id="features" class="features-new fade-in-section">
+
+    <!-- Projects -->
+    <section id="projects" class="features-new fade-in-section">
       <div class="section-header">
-        <h3 class="section-title-new">Capabilities</h3>
-        <p class="section-desc">What Soft Vortex offers</p>
+        <h3 class="section-title-new">Projects</h3>
+        <p class="section-desc">What we're working on</p>
       </div>
+
       <div class="features-list">
-        <div class="feature-item"
-          onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/crashes/'">
-          <div class="feature-header">
-            <div class="feature-icon-new">
-              <img src="https://img.icons8.com/ios-filled/50/ffffff/bomb.png" alt="crash">
-            </div>
-            <div>
-              <h4 class="feature-title-new">Crashes</h4>
-              <p class="feature-subtitle">up to date crash methods</p>
-            </div>
+        <div class="feature-item project-card" onclick="openVideoModal('sv_kit_demo', 'kit.html')">
+          <div class="feature-icon-new">
+            <img src="logo.png" alt="Soft Vortex Kit" class="feature-icon">
           </div>
-          <p class="feature-description">Crashes that involve physics and absolutely annoying people</p>
-          <span class="feature-link">Explore →</span>
+          <div class="project-content-wrapper">
+            <div class="feature-header-text">
+              <h4 class="feature-title-new">Soft Vortex Kit</h4>
+              <p class="feature-subtitle">Complete NBT toolkit for Minecraft</p>
+            </div>
+            <p class="feature-description">A shulker box filled with items that can be used to your advantage, maybe
+              crash a server, maybe take over it. Your choice.</p>
+            <div class="project-features">
+              <span class="project-tag">Crash Methods</span>
+              <span class="project-tag">SOCKS5 Proxies</span>
+              <span class="project-tag">Meteor Modpack</span>
+              <span class="project-tag">Backdoors (Soon)</span>
+            </div>
+            <span class="feature-status">Active Development</span>
+          </div>
         </div>
-        <div class="feature-item"
-          onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/proxies'">
-          <div class="feature-header">
-            <div class="feature-icon-new">
-              <img src="https://img.icons8.com/ios-filled/50/ffffff/wifi.png" alt="proxy">
-            </div>
-            <div>
-              <h4 class="feature-title-new">SOCKS5 Proxies</h4>
-              <p class="feature-subtitle">proxy network</p>
-            </div>
+
+        <div class="feature-item project-card" onclick="openVideoModal('feather_demo', 'feather.html')">
+          <div class="feature-icon-new">
+            <img src="feather-logo.png" alt="Feather Obfuscator" class="feature-icon">
           </div>
-          <p class="feature-description">A file of proxies for Meteor client</p>
-          <span class="feature-link">Explore →</span>
-        </div>
-        <div class="feature-item">
-          <div class="feature-header">
-            <div class="feature-icon-new">
-              <img src="https://img.icons8.com/ios-filled/50/ffffff/rocket.png" alt="modpack">
+          <div class="project-content-wrapper">
+            <div class="feature-header-text">
+              <h4 class="feature-title-new">Feather Obfuscator</h4>
+              <p class="feature-subtitle">Lua obfuscator</p>
             </div>
-            <div>
-              <h4 class="feature-title-new">Meteor Modpack</h4>
-              <p class="feature-subtitle">Optimized for v1.21.1</p>
+            <p class="feature-description">Advanced Lua code obfuscation tool with virtualization capabilities. Desktop
+              application built with Electron for cross-platform code protection.</p>
+            <div class="project-features">
+              <span class="project-tag">Lua Obfuscation</span>
+              <span class="project-tag">Cross-Platform</span>
             </div>
+            <span class="feature-status">v1.0.0 FINAL</span>
           </div>
-          <p class="feature-description">Custom-configured Meteor client modpack with performance optimizations and
-            essential utilities.</p>
-          <span class="feature-status">Active</span>
-        </div>
-        <div class="feature-item">
-          <div class="feature-header">
-            <div class="feature-icon-new">
-              <img src="https://img.icons8.com/ios-filled/50/ffffff/door.png" alt="backdoor">
-            </div>
-            <div>
-              <h4 class="feature-title-new">Backdoors & Force-Ops</h4>
-              <p class="feature-subtitle">Server backdooring</p>
-            </div>
-          </div>
-          <p class="feature-description">Backdoors for people who like to play the long game</p>
-          <span class="feature-status upcoming">In Development</span>
         </div>
       </div>
     </section>
+
+
+
     <!-- Footer -->
     <footer class="footer-new">
       <div class="footer-grid">
@@ -178,7 +175,7 @@
         <div class="footer-links">
           <a href="https://discord.gg/akwtAf8GA2" class="footer-link">Discord Community</a>
           <a href="#" onclick="download(); return false;" class="footer-link">Download</a>
-          <a href="#features" class="footer-link">Features</a>
+          <a href="#projects" class="footer-link">Projects</a>
         </div>
         <div class="footer-info">
           <p class="footer-text">© 2025 Soft Vortex</p>
@@ -187,6 +184,24 @@
       </div>
     </footer>
   </div>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="video-container">
+        <video id="demo-video" controls>
+          <source src="" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="modal-actions">
+        <a id="modal-project-link" href="#" class="btn-download">View Project Details</a>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
+
 </html>
