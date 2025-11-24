@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Vortex Kit - NBT Toolkit</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="ascii-vortex"></div>
+
+    <div class="container-main">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <a href="index.html" class="logo-container" style="text-decoration: none;">
+                    <img src="logo.png" alt="Soft Vortex" class="logo-img">
+                    <h1 class="logo">SOFT VORTEX</h1>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html#team" class="nav-link">Team</a>
+                    <a href="https://discord.gg/akwtAf8GA2" class="nav-link-cta">Discord</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero-new animate-on-load">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <span class="hero-label">NBT TOOLKIT</span>
+                    <h2 class="hero-title">Soft Vortex Kit</h2>
+                    <p class="hero-desc">Complete NBT toolkit for advanced Minecraft gameplay and server management.
+                        Everything you need for NBT manipulation, crashes, and utilities.</p>
+                    <div class="hero-actions">
+                        <button class="btn-download" onclick="download()">
+                            <span>Download v7.2.0</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 15L12 3M12 15L8 11M12 15L16 11M3 17L3 18C3 19.1046 3.89543 20 5 20L19 20C20.1046 20 21 19.1046 21 18V17"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <a href="https://discord.gg/akwtAf8GA2" class="btn-secondary">Get Support</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">v7.2.0</div>
+                            <div class="stat-label">Latest Version</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">1.21.5+</div>
+                            <div class="stat-label">MC Compatible</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="features-new fade-in-section">
+            <div class="section-header">
+                <h3 class="section-title-new">Features</h3>
+                <p class="section-desc">Everything included in the kit</p>
+            </div>
+
+            <div class="features-list">
+                <div class="feature-item"
+                    onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/crashes/'">
+                    <div class="feature-header">
+                        <div class="feature-icon-new">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/bomb.png" alt="crash">
+                        </div>
+                        <div>
+                            <h4 class="feature-title-new">Crash Methods</h4>
+                            <p class="feature-subtitle">Up-to-date crash techniques</p>
+                        </div>
+                    </div>
+                    <p class="feature-description">Advanced physics-based crash methods for server testing and
+                        vulnerability assessment. Regularly updated with new techniques.</p>
+                    <span class="feature-link">Learn More →</span>
+                </div>
+
+                <div class="feature-item"
+                    onclick="window.location.href='https://soft-vortex.github.io/SV/introduction/proxies'">
+                    <div class="feature-header">
+                        <div class="feature-icon-new">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/wifi.png" alt="proxy">
+                        </div>
+                        <div>
+                            <h4 class="feature-title-new">SOCKS5 Proxies</h4>
+                            <p class="feature-subtitle">Curated proxy list</p>
+                        </div>
+                    </div>
+                    <p class="feature-description">Regularly updated SOCKS5 proxy list optimized for Meteor client.
+                        Enhanced privacy and connection management.</p>
+                    <span class="feature-link">View List →</span>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon-new">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/rocket.png" alt="modpack">
+                        </div>
+                        <div>
+                            <h4 class="feature-title-new">Meteor Modpack</h4>
+                            <p class="feature-subtitle">Optimized for v1.21.1</p>
+                        </div>
+                    </div>
+                    <p class="feature-description">Custom-configured Meteor client modpack with performance
+                        optimizations and essential utilities pre-installed.</p>
+                    <span class="feature-status">Included</span>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon-new">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/door.png" alt="backdoor">
+                        </div>
+                        <div>
+                            <h4 class="feature-title-new">Backdoors & Force-Ops</h4>
+                            <p class="feature-subtitle">Server access utilities</p>
+                        </div>
+                    </div>
+                    <p class="feature-description">Advanced administrative access utilities for authorized server
+                        management and penetration testing.</p>
+                    <span class="feature-status upcoming">Coming Soon</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-new">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h5 class="footer-logo">SOFT VORTEX</h5>
+                    <p class="footer-tagline">(the project)</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="https://discord.gg/akwtAf8GA2" class="footer-link">Discord Community</a>
+                    <a href="feather.html" class="footer-link">Feather Obfuscator</a>
+                </div>
+                <div class="footer-info">
+                    <p class="footer-text">© 2025 Soft Vortex</p>
+                    <p class="footer-text">All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
